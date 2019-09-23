@@ -7,27 +7,32 @@
  */
 public class Fraction
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Fraction
-     */
+    // fields
+    // syntax: private dataType nameOfField
+    private int numerator;
+    private int denominator;
+    //constructor(s): public NameOfClass()
     public Fraction()
     {
-        // initialise instance variables
-        x = 0;
+        // the purpose of the constructor is to give initial values to
+        // all of the fields.
+        // Our class decided the default of a fraction should be 7/14
+        numerator = 7; //store the value 7 in the field numerator
+        denominator = 14; //store the value 14 in the field denominator, 
+        // do not set a data type because then that creates a new local
+        // instead of setting the value of the field
+            
+        
+        
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    // method(s)
+    // synatx: public returnType nameOfMethod()
+    public double getDecimalValue()
     {
-        // put your code here
-        return x + y;
+        //to return a value from a method, we use return.
+        return numerator / denominator;
     }
+    
+
 }
